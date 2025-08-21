@@ -2,6 +2,13 @@
 
 🎯 一个用于从 `.swf` Flash 文件中提取赛尔号下周预告的 Node.js 工具。
 
+[![Node.js Version](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen.svg)](https://nodejs.org/)
+[![License](https://img.shields.io/badge/license-ISC-blue.svg)](LICENSE)
+[![GitHub Issues](https://img.shields.io/github/issues/WhY15w/seer-swf-jpeg3-dumper.svg)](https://github.com/WhY15w/seer-swf-jpeg3-dumper/issues)
+[![GitHub Stars](https://img.shields.io/github/stars/WhY15w/seer-swf-jpeg3-dumper.svg)](https://github.com/WhY15w/seer-swf-jpeg3-dumper/stargazers)
+
+_感谢 GitHub Copilot 的帮助_ 🤖
+
 > 支持自动导出 SWF 文件中的嵌入式 JPEG/PNG 图像，可替代 JPEXS 等手动操作流程。
 
 ---
