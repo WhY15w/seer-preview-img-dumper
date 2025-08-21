@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-08-21T15:03:08.411Z",
+  "totalImages": 1,
+  "totalOriginalSize": 1969024,
+  "totalCompressedSize": 1077879,
+  "averageCompressionRatio": "45.3",
+  "files": [
+    {
+      "fileName": "image_199.png",
+      "filePath": "output\\image_199.png",
+      "characterId": 199,
+      "originalSize": 1969024,
+      "compressedSize": 1077879,
+      "compressionRatio": "45.3"
+    }
+  ]
+}
