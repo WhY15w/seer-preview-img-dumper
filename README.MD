@@ -1,4 +1,4 @@
-# Seer-swf-jpeg3-dumper
+# Seer-preview-img-dumper
 
 🎯 一个用于从 `.swf` Flash 文件中提取赛尔号下周预告的 Node.js 工具。
 
