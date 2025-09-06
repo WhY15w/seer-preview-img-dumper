@@ -31,16 +31,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Create necessary directories
-        run: |
-          mkdir -p images
-          mkdir -p scripts
-
       - name: Run image sync
         run: npm start
-
-      - name: Update README with latest images
-        run: node scripts/update-readme.js
 
       - name: Configure Git
         run: |
