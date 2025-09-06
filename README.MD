@@ -2,7 +2,7 @@
 
 🎯 一个用于从 `.swf` Flash 文件中提取赛尔号下周预告的 Node.js 工具。
 
-此为赛尔号信息聚合页的一个子功能的衍生项目
+> **此为赛尔号信息聚合页的一个子功能的衍生项目**
 
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen.svg)](https://nodejs.org/)
 [![License](https://img.shields.io/badge/license-ISC-blue.svg)](LICENSE)
@@ -14,6 +14,10 @@ _感谢 GitHub Copilot 的帮助_ 🤖
 > 支持自动导出 SWF 文件中的嵌入式 JPEG/PNG 图像，可替代 JPEXS 等手动操作流程。
 
 ---
+
+## 📸 最新预告图片
+
+![img](output/image_199.png)
 
 ## ✨ 功能特点
 
