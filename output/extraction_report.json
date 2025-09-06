@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-09-06T13:40:17.923Z",
+  "timestamp": "2025-09-06T13:53:10.358Z",
   "totalImages": 1,
   "totalOriginalSize": 1912731,
   "totalCompressedSize": 1044130,
@@ -7,7 +7,7 @@
   "files": [
     {
       "fileName": "image_199.png",
-      "filePath": "output\\image_199.png",
+      "filePath": "output/image_199.png",
       "characterId": 199,
       "originalSize": 1912731,
       "compressedSize": 1044130,
