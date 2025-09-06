@@ -3,7 +3,7 @@ const path = require("path");
 
 function updateReadme() {
   const imagesDir = path.join(__dirname, "..", "images");
-  const readmePath = path.join(__dirname, "..", "README.md");
+  const readmePath = path.join(__dirname, "..", "README.MD");
 
   // 检查README文件是否存在
   if (!fs.existsSync(readmePath)) {
