@@ -2,9 +2,9 @@ name: Sync Preview Images
 
 on:
   schedule:
-    # 北京时间每周五12:00 (UTC+8 = UTC 4:00)
+    # 北京时间每周五12:00
     - cron: "0 4 * * 5"
-    # 北京时间每周五15:00 (UTC+8 = UTC 7:00)
+    # 北京时间每周五15:00
     - cron: "0 7 * * 5"
   workflow_dispatch: # 允许手动触发
 
