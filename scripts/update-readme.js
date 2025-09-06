@@ -5,12 +5,31 @@ function updateReadme() {
   const imagesDir = path.join(__dirname, "..", "images");
   const readmePath = path.join(__dirname, "..", "README.md");
 
+  // 检查README文件是否存在
+  if (!fs.existsSync(readmePath)) {
+    console.log("README.md not found, creating a new one...");
+    const initialReadme = `# 赛尔号预告图片获取器
+
+本项目用于自动获取赛尔号预告图片。
+
+## 🚀 自动同步
+
+本项目配置了GitHub Actions工作流，会在每周五的北京时间12:00和15:00自动获取最新的预告图片，并更新到本README文档中。
+
+- ⏰ 自动执行时间：每周五 12:00 和 15:00 (北京时间)
+- 📁 图片保存路径：\`./images/\` 目录
+- 🔄 历史图片会被保留作为备份
+`;
+    fs.writeFileSync(readmePath, initialReadme);
+  }
+
   // 读取现有README
   let readmeContent = fs.readFileSync(readmePath, "utf8");
 
   // 获取所有图片文件
   if (!fs.existsSync(imagesDir)) {
-    console.log("Images directory not found");
+    console.log("Images directory not found, creating it...");
+    fs.mkdirSync(imagesDir, { recursive: true });
     return;
   }
 

@@ -21,11 +21,16 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: "18"
           cache: "npm"
 
       - name: Install dependencies
         run: npm install
+
+      - name: Create necessary directories
+        run: |
+          mkdir -p images
+          mkdir -p scripts
 
       - name: Run image sync
         run: npm start
