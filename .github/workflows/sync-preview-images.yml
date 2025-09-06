@@ -8,6 +8,10 @@ on:
     - cron: "0 7 * * 5"
   workflow_dispatch: # 允许手动触发
 
+permissions:
+  contents: write
+  actions: read
+
 jobs:
   sync-images:
     runs-on: ubuntu-latest
@@ -40,8 +44,8 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Commit and push changes
         run: |
@@ -49,6 +53,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
+            export TZ='Asia/Shanghai'
             git commit -m "🤖 Auto sync preview images - $(date +'%Y-%m-%d %H:%M:%S')"
             git push
           fi
