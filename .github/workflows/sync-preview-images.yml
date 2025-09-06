@@ -1,0 +1,49 @@
+name: Sync Preview Images
+
+on:
+  schedule:
+    # 北京时间每周五12:00 (UTC+8 = UTC 4:00)
+    - cron: "0 4 * * 5"
+    # 北京时间每周五15:00 (UTC+8 = UTC 7:00)
+    - cron: "0 7 * * 5"
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  sync-images:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run image sync
+        run: npm start
+
+      - name: Update README with latest images
+        run: node scripts/update-readme.js
+
+      - name: Configure Git
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+      - name: Commit and push changes
+        run: |
+          git add .
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🤖 Auto sync preview images - $(date +'%Y-%m-%d %H:%M:%S')"
+            git push
+          fi
