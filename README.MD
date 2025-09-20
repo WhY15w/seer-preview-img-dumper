@@ -1,5 +1,10 @@
 # Seer-preview-img-dumper
 
+Flash也是半截身子入土了，欢迎查看解析Unity端预告图片的新项目
+
+<https://github.com/WhY15w/seer-unity-preview-img-dumper>
+
+
 🎯 一个用于从 `.swf` Flash 文件中提取赛尔号下周预告的 Node.js 工具。
 
 > **此为赛尔号信息聚合页的一个子功能的衍生项目**
