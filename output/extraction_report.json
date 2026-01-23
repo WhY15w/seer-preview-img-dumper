@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-01-16T07:20:43.304Z",
+  "timestamp": "2026-01-23T07:21:34.150Z",
   "totalImages": 2,
-  "totalOriginalSize": 2162788,
-  "totalCompressedSize": 1212897,
+  "totalOriginalSize": 2043015,
+  "totalCompressedSize": 1147935,
   "averageCompressionRatio": "28.1",
   "files": [
     {
@@ -17,8 +17,8 @@
       "fileName": "image_199.png",
       "filePath": "output/image_199.png",
       "characterId": 199,
-      "originalSize": 2086820,
-      "compressedSize": 1145461,
+      "originalSize": 1967047,
+      "compressedSize": 1080499,
       "compressionRatio": "45.1"
     }
   ]
