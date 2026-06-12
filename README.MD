@@ -22,7 +22,7 @@ _感谢 GitHub Copilot 的帮助_ 🤖
 
 ## 📸 最新预告图片
 
-![img](output/image_199.png)
+![img](output/image_199.jpg)
 
 ## ✨ 功能特点
 
