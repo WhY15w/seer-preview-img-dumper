@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-10-23T12:21:29.155Z",
+  "timestamp": "2026-10-30T10:41:15.664Z",
   "totalImages": 2,
-  "totalOriginalSize": 2298500,
-  "totalCompressedSize": 1274477,
-  "averageCompressionRatio": "28.5",
+  "totalOriginalSize": 2128728,
+  "totalCompressedSize": 1202415,
+  "averageCompressionRatio": "28.0",
   "files": [
     {
       "fileName": "image_152.jpg",
@@ -17,9 +17,9 @@
       "fileName": "image_199.png",
       "filePath": "output/image_199.png",
       "characterId": 199,
-      "originalSize": 2222532,
-      "compressedSize": 1207041,
-      "compressionRatio": "45.7"
+      "originalSize": 2052760,
+      "compressedSize": 1134979,
+      "compressionRatio": "44.7"
     }
   ]
 }
